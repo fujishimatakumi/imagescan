@@ -59,7 +59,7 @@ class ImageScan():
                     tempdupfile.append(filenamelist[j])
             if len(tempdupfile) != 0:
                 tempdupfile.append(filenamelist[i])
-                self.multiAppndinArray(dupfilename, *tempdupfile)
+                self.multiAppndinArray(dupfilename, tempdupfile)
             
         
         return dupfilename
@@ -75,7 +75,7 @@ class ImageScan():
         
         return False
     
-    def multiAppndinArray(self, array, *values):
+    def multiAppndinArray(self, array, values):
         for value in values:
             array.append(value)
 
